@@ -9,8 +9,6 @@
            review="review.evervolv.com"/>
   <remote  name="gh"
            fetch="git://github.com/" />
-  <remote  name="dg"
-           fetch="git://github.com/drewgaren/" />
   <remote  name="linaro-android"
            fetch="git://android.git.linaro.org" />
   <default revision="refs/tags/android-4.1.1_r4"
@@ -370,6 +368,6 @@
   <project path="sdk" name="platform/sdk" />
   
   <!--DrewGaren-->
-  <project path="device/htc/flyer" name="drewgaren/jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
-  <project path="kernel/htc/flyer" name="drewgaren/DexterJB-FlyerKernel" remote="dg" revision="JB" />
+  <project path="device/htc/flyer" name="drewgaren/jelly_device_htc_flyer_wip" remote="gh" revision="JB" />
+  <project path="kernel/htc/flyer" name="drewgaren/DexterJB-FlyerKernel" remote="gh" revision="JB" />
 </manifest>
