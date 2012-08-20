@@ -9,10 +9,13 @@
            review="review.cyanogenmod.com" />
 
   <remote  name="dg"
-           fetch="git://github.com/drewgaren" />
+           fetch="git://github.com/drewgaren/" />
 
   <remote  name="cf"
-           fetch="git://github.com/codefireaosp" />
+           fetch="git://github.com/codefireaosp/" />
+           
+  <remote  name="cfa"
+           fetch="git://github.com/codefire-ace/" />
 
   <!--CyanogenMod-->
   <project path="build" name="CyanogenMod/android_build" remote="gh" revision="jellybean">
@@ -213,7 +216,6 @@
   <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="gh" revision="jellybean" />
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" remote="gh" revision="jellybean" />
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="gh" revision="jellybean" />
-  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" remote="gh" revision="jellybean" />
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="jellybean" />
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="gh" revision="jellybean" />
   <project path="hardware/ril" name="CyanogenMod/android_hardware_ril" remote="gh" revision="jellybean" />
@@ -327,6 +329,7 @@
   <project path="device/htc/flyer" name="jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
   <project path="device/htc/msm7x30-common" name="jellytime_device_htc_msm7x30-common" remote="dg" revision="master" />
   <project path="kernel/htc/flyer" name="DexterJB-FlyerKernel" remote="dg" revision="JB" />
-  <project path="frameworks/base" name="android_frameworks_base" remote="cf" revision="jb-devel" />
+  <project path="frameworks/base" name="codefireaosp/android_frameworks_base" remote="cf" revision="jb-devel" />
   <project path="frameworks/av" name="android_frameworks_av" remote="dg" revision="JB" />
+  <project path="hardware/qcom/display" name="codefire-ace/android_hardware_qcom_display" remote="cfa" revision="jellybean" />
 </manifest>
