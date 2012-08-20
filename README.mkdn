@@ -1,15 +1,16 @@
 Getting Started
 ---------------
-This will allow you to build CM10 for The HTC FLYER... 
+This will allow you to build Evervolv, AOSP, or a modified version of Codefires CM10 for The HTC FLYER or HTC DESIRE HD... 
 
-Warning this is still a work in progress. To test compiling you can try from my repo and or submit new patches to me.
+Warning this is still a work in progress. This is much stabler then CM10 Flyer builds in my other manifest.
 
-    repo init -u git://github.com/drewgaren/manifest.git -b JB
+    repo init -u git://github.com/drewgaren/manifest.git -b evervolv
 
 Then to sync up:
 
     repo sync
 
+(This will take some time, go have a drink and come back)
 
 This is still a work in Progress. Please submit any Flyer Patches via repo or email.
 
@@ -20,24 +21,44 @@ Thanks to Dexter for the current Kernel for JB.
 FLYER WIP BUILDING INSTRUCTIONS:
 --------------------------------
 
-*This is a WIP and you may run into compiling errors*
+*This is a WIP and you may run into compiling errors* Please See Following Changelog for More Info Below.
 
 After you have repo sync'd run:
 
 . build/envsetup.sh
 
-I recommend running cm_flyer-eng to avoid errors in compiling. 
+I recommend running ev_flyer-eng to avoid errors in compiling. 
 Run the following:
 
-lunch cm_flyer-eng
+lunch ev_flyer-eng
 
-If you run into errors regarding surfacetextureclient replace frameworks/native with evervolv's framework native folder. 
-This has not been updated in the manifest yet as I am currently working on a fix withing CyanogenMod's native folder.
+make -j#
+
+or
+
+make -j# otapackage
+
+Build Notes: 
+
+Make sure kernel synced, check your working directory in the kernel folder for HTC/flyer. If it's not there git clone the 
+kernel from here and rename directory to flyer. 
+
+When you build if your dependencies are trying to pull then you are missing the kernel. Make sure to grab it from my github.
+
+CHANGELOG AND ISSUES:
+---------------------
 
 If you have a problem with the kernel you can build the kernel and modules seperately and move the zimage into the ramdisk 
 folder available on my github and repack it Rom Kitchen.
 
-This rom will be a huge Work in Progress and will continue to grow. I will be added AOKP manifest for the Flyer as well.
+This rom will be a huge Work in Progress and will continue to grow. As I find issues during compiling I will be fixing them
+and posting them up in my git hub. If you find some please contact me as well.
+
+Currently you may run into an issue of some Prebuilts not being copied. If this is the case you can copy them after the rom
+has been packaged into a zip. All the necessary files are located in the Device folder.
+
+This manifest should work for most of you with out issue.
+
 
 
 
