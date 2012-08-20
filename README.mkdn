@@ -1,6 +1,8 @@
 Getting Started
 ---------------
-This will allow you to build CM10 and will also allow you to Build CM10 for The HTC FLYER
+This will allow you to build CM10 for The HTC FLYER... 
+
+Warning this is still a work in progress. To test compiling you can try from my repo and or submit new patches to me.
 
     repo init -u git://github.com/drewgaren/manifest.git -b JB
 
@@ -8,8 +10,9 @@ Then to sync up:
 
     repo sync
 
-Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.com/) for building instructions.
 
 This is still a work in Progress. Please submit any Flyer Patches via repo or email.
 
 Latest Builds will be hosted at DrewGaren.com
+
+Thanks to Dexter for the current Kernel for JB.
