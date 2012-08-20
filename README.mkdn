@@ -4,7 +4,7 @@ This will allow you to build Evervolv, AOSP, or a modified version of Codefires 
 
 Warning this is still a work in progress. This is much stabler then CM10 Flyer builds in my other manifest.
 
-    repo init -u git://github.com/drewgaren/manifest.git -b evervolv
+    repo init -u git://github.com/drewgaren/Manifest.git -b evervolv
 
 Then to sync up:
 
