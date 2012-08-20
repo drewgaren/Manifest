@@ -16,3 +16,29 @@ This is still a work in Progress. Please submit any Flyer Patches via repo or em
 Latest Builds will be hosted at DrewGaren.com
 
 Thanks to Dexter for the current Kernel for JB.
+
+FLYER WIP BUILDING INSTRUCTIONS:
+--------------------------------
+
+*This is a WIP and you may run into compiling errors*
+
+After you have repo sync'd run:
+
+. build/envsetup.sh
+
+I recommend running cm_flyer-eng to avoid errors in compiling. 
+Run the following:
+
+lunch cm_flyer-eng
+
+If you run into errors regarding surfacetextureclient replace frameworks/native with evervolv's framework native folder. 
+This has not been updated in the manifest yet as I am currently working on a fix withing CyanogenMod's native folder.
+
+If you have a problem with the kernel you can build the kernel and modules seperately and move the zimage into the ramdisk 
+folder available on my github and repack it Rom Kitchen.
+
+This rom will be a huge Work in Progress and will continue to grow. I will be added AOKP manifest for the Flyer as well.
+
+
+
+
