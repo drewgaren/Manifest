@@ -370,6 +370,6 @@
   <project path="sdk" name="platform/sdk" />
   
   <!--DrewGaren-->
-  <project path="device/htc/flyer" name="drewgaren/jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
-  <project path="kernel/htc/flyer" name="drewgaren/DexterJB-FlyerKernel" remote="dg" revision="JB" />
+  <project path="device/htc/flyer" name="jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
+  <project path="kernel/htc/flyer" name="DexterJB-FlyerKernel" remote="dg" revision="JB" />
 </manifest>
