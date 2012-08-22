@@ -349,12 +349,6 @@
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
   <project path="pdk" name="platform/pdk" />
   <project path="prebuilt" name="platform/prebuilt" />
-  <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" />
-  <project path="prebuilts/misc" name="platform/prebuilts/misc" />
-  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" />
-  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
-  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" />
-  <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   
   <!--DrewGaren-->
@@ -376,4 +370,11 @@
   <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_mips_mipsel-linux-android-4.6" remote="gh" revision="jellybean" />
   <project path="prebuilts/gcc/linux-x86/x86/i686-android-linux-4.4.3" name="CyanogenMod/android_prebuilts_gcc_linux-x86_x86_i686-android-linux-4.4.3" remote="gh" revision="jellybean" />
   <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_x86_i686-linux-android-4.6" remote="gh" revision="jellybean" />
+  <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="gh" revision="jellybean" />
+  <project path="prebuilts/eclipse" name="CyanogenMod/android_prebuilts_eclipse" remote="gh" revision="jellybean" />
+  <project path="prebuilts/misc" name="CyanogenMod/android_prebuilts_misc" remote="gh" revision="jellybean" />
+  <project path="prebuilts/ndk" name="CyanogenMod/android_prebuilts_ndk" remote="gh" revision="jellybean" />
+  <project path="prebuilts/qemu-kernel" name="CyanogenMod/android_prebuilts_qemu-kernel" remote="gh" revision="jellybean" />
+  <project path="prebuilts/sdk" name="CyanogenMod/android_prebuilts_sdk" remote="gh" revision="jellybean" />
+  <project path="prebuilts/tools" name="CyanogenMod/android_prebuilts_tools" remote="gh" revision="jellybean" />
 </manifest>
