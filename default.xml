@@ -58,7 +58,6 @@
   <project path="packages/apps/CMWimaxSettings" name="android_packages_apps_CMWimaxSettings" remote="github" revision="jellybean" />
   <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="github" revision="jellybean" />
   <project path="packages/apps/Email" name="android_packages_apps_Email" remote="github" revision="jellybean" />
-  <project path="packages/apps/Launcher2" name="android_packages_apps_Launcher2" remote="github" revision="jellybean" />
   <project path="packages/apps/Mms" name="android_packages_apps_Mms" remote="github" revision="jellybean" />
   <project path="packages/apps/Phone" name="android_packages_apps_Phone" remote="github" revision="jellybean" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="github" revision="jellybean" />
@@ -118,7 +117,6 @@
   <project name="codefire-ace/platform_device_htc_msm7x30-common.git" path="device/htc/msm7x30-common" remote="gh" revision="jb-devel" />
   <project name="codefire-ace/platform_vendor_htc_ace.git" path="vendor/htc/ace" remote="gh" revision="jb-devel" />
   <project path="hardware/qcom/display" name="codefire-ace/android_hardware_qcom_display" remote="gh" revision="jb-devel"/>
-  <project name="CodeFireAOSP/platform_packages_wallpapers_basic" path="packages/wallpapers/Basic" remote="gh" revision="jb-devel" />
   <project name="CodeFireAOSP/platform_vendor_qcom_proprietary.git" path="vendor/qcom/proprietary" remote="gh" revision="jb-devel" />
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="gh" revision="jellybean"/>
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="jellybean"/>
@@ -376,4 +374,5 @@
   <project path="prebuilts/qemu-kernel" name="CyanogenMod/android_prebuilts_qemu-kernel" remote="gh" revision="jellybean" />
   <project path="prebuilts/sdk" name="CyanogenMod/android_prebuilts_sdk" remote="gh" revision="jellybean" />
   <project path="prebuilts/tools" name="CyanogenMod/android_prebuilts_tools" remote="gh" revision="jellybean" />
+  <project path="packages/apps/Trebuchet" name="CyanogenMod/android_packages_apps_Trebuchet" remote="gh" revision="jellybean" />
 </manifest>
