@@ -13,9 +13,9 @@
            fetch="git://github.com/drewgaren" />
   <remote  name="linaro-android"
            fetch="git://android.git.linaro.org" />
-  <default revision="refs/tags/android-4.1.1_r4"
+  <default revision="refs/tags/android-4.1.2_r1"
            remote="aosp"
-           sync-j="8" />
+           sync-j="4" />
 
 
   <!--Evervolv-->
@@ -109,14 +109,19 @@
   <project path="vendor/hp" name="android_vendor_hp" remote="github" revision="jellybean" />
   <project path="vendor/samsung" name="android_vendor_samsung" remote="github" revision="jellybean"/>
 
+  <!-- Tmobile Themes -->
+  <project path="vendor/tmobile/products/themes" name="themes-platform-vendor-tmobile-products-themes" remote="github" revision="jellybean"/>
+  <project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github" revision="jellybean" />
+  <project path="vendor/tmobile/libs/com.tmobile.themes" name="themes-platform-vendor-tmobile-libs-com.tmobile.themes" remote="github" revision="jellybean"/>
+  <project path="vendor/tmobile/providers/ThemeManager" name="themes-platform-vendor-tmobile-providers-ThemeManager" remote="github" revision="jellybean"/>
+  <project path="vendor/tmobile/themes/Androidian-6-100" name="theme-Androidian-6-100" remote="github" revision="jellybean"/>
 
   <!--CodeFire-->
-  <project name="aospX/platform_packages_apps_FileManager" path="packages/apps/FileManager" remote="gh" revision="ics-devel"/>
-  <project name="codefire-ace/platform_device_htc_ace.git" path="device/htc/ace" remote="gh" revision="evervolv" />
-  <project name="codefire-ace/platform_device_htc_msm7x30-common.git" path="device/htc/msm7x30-common" remote="gh" revision="jb-devel" />
-  <project name="codefire-ace/platform_vendor_htc_ace.git" path="vendor/htc/ace" remote="gh" revision="jb-devel" />
+  <project name="aospX/platform_device_htc_ace" path="device/htc/ace" remote="gh" revision="jb-devel" />
+  <project name="aospX/platform_device_htc_msm7x30-common" path="device/htc/msm7x30-common" remote="gh" revision="jb-devel" />
+  <project name="aospX/platform_device_htc_ace" path="vendor/htc/ace" remote="gh" revision="jb-devel" />
   <project path="hardware/qcom/display" name="codefire-ace/android_hardware_qcom_display" remote="gh" revision="jb-devel"/>
-  <project name="CodeFireAOSP/platform_vendor_qcom_proprietary.git" path="vendor/qcom/proprietary" remote="gh" revision="jb-devel" />
+  <project name="CodeFireAOSP/platform_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="gh" revision="jb-devel" />
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="gh" revision="jellybean"/>
   <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="jellybean"/>
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="gh" revision="jellybean"/>
@@ -125,8 +130,8 @@
   <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" remote="gh" revision="jellybean"/>
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="jellybean" />
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" remote="gh" revision="jellybean" />
+  <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" remote="gh" revision="jellybean" />
   <project name="KangBangKreations/KangBanged-7x30" path="kernel/htc/KangBanged-7x30" remote="gh" revision="kb-stable" />
-  <project name="platform/packages/apps/0xbench" path="packages/apps/0xbench" remote="linaro-android" revision="linaro-master" />
 
 
   <!--Aosp-->
@@ -345,6 +350,21 @@
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
   <project path="pdk" name="platform/pdk" />
   <project path="prebuilt" name="platform/prebuilt" />
+  <project path="prebuilt" name="platform/prebuilt" />
+  <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" />
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" />
+<!--  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.4.3" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.4.3" />-->
+<!--  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" />-->
+  <project path="prebuilts/gcc/linux-x86/x86/i686-android-linux-4.4.3" name="platform/prebuilts/gcc/linux-x86/x86/i686-android-linux-4.4.3" />
+  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="platform/prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" />
+  <project path="prebuilts/ndk" name="platform/prebuilts/ndk" />
+  <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
+  <project path="prebuilts/sdk" name="platform/prebuilts/sdk" />
+  <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   
   <!--DrewGaren-->
@@ -353,26 +373,4 @@
   <project path="device/htc/flyer" name="jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
   <project path="kernel/htc/flyer" name="DexterJB-FlyerKernel" remote="dg" revision="JB" />
   <project path="frameworks/av" name="android_frameworks_av-1" remote="dg" revision="JB"/>
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="CyanogenMod/android_prebuilts_gcc_darwin-x86_arm_arm-eabi-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.6" name="CyanogenMod/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.4.3" name="CyanogenMod/android_prebuilts_gcc_darwin-x86_mips_mipsel-linux-android-4.4.3" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/darwin-x86/mips/mipsel-linux-android-4.6" name="CyanogenMod/android_prebuilts_gcc_darwin-x86_mips_mipsel-linux-android-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-android-linux-4.4.3" name="CyanogenMod/android_prebuilts_gcc_darwin-x86_x86_i686-android-linux-4.4.3" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/darwin-x86/x86/i686-linux-android-4.6" name="CyanogenMod/android_prebuilts_gcc_darwin-x86_x86_i686-linux-android-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_arm_arm-eabi-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="CyanogenMod/android_prebuilts_gcc_linux-x86_host_i686-linux-glibc2.7-4.4.3" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_host_i686-linux-glibc2.7-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.7-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.4.3" name="CyanogenMod/android_prebuilts_gcc_linux-x86_mips_mipsel-linux-android-4.4.3" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/mips/mipsel-linux-android-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_mips_mipsel-linux-android-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/x86/i686-android-linux-4.4.3" name="CyanogenMod/android_prebuilts_gcc_linux-x86_x86_i686-android-linux-4.4.3" remote="gh" revision="jellybean" />
-  <project path="prebuilts/gcc/linux-x86/x86/i686-linux-android-4.6" name="CyanogenMod/android_prebuilts_gcc_linux-x86_x86_i686-linux-android-4.6" remote="gh" revision="jellybean" />
-  <project path="prebuilt" name="CyanogenMod/android_prebuilt" remote="gh" revision="jellybean" />
-  <project path="prebuilts/eclipse" name="CyanogenMod/android_prebuilts_eclipse" remote="gh" revision="jellybean" />
-  <project path="prebuilts/misc" name="CyanogenMod/android_prebuilts_misc" remote="gh" revision="jellybean" />
-  <project path="prebuilts/ndk" name="CyanogenMod/android_prebuilts_ndk" remote="gh" revision="jellybean" />
-  <project path="prebuilts/qemu-kernel" name="CyanogenMod/android_prebuilts_qemu-kernel" remote="gh" revision="jellybean" />
-  <project path="prebuilts/sdk" name="CyanogenMod/android_prebuilts_sdk" remote="gh" revision="jellybean" />
-  <project path="prebuilts/tools" name="CyanogenMod/android_prebuilts_tools" remote="gh" revision="jellybean" />
 </manifest>
