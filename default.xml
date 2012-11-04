@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
+  <remote name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
-  <remote  name="github"
+  <remote name="github"
            fetch="git://github.com/Evervolv/"
            review="review.evervolv.com"/>
   <remote  name="gh"
            fetch="git://github.com/" />
   <remote  name="dg"
            fetch="git://github.com/drewgaren" />
-  <remote  name="linaro-android"
-           fetch="git://android.git.linaro.org" />
   <default revision="refs/tags/android-4.1.2_r1"
            remote="aosp"
            sync-j="4" />
  remote="github" revision="jellybean"/>
-  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="jellybean"/>
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="jellybean"/>
-  <project path="device/ti/panda" name="android_device_ti_panda" remote="github" revision="jellybean"/>
-  <project path="external/aac" name="android_external_aac" remote="github" revision="jellybean"/>
-  <project path="external/bluetooth/bluez" name="android_external_bluetooth_bluez" remote="github" revision="jellybean"/>
-  <project path="external/compat-wireless-3.5-rc3-1-sn" name="android_ex
 
   <!--Evervolv-->
   <project path="build" name="android_build" remote="dg" revision="jellybean">
@@ -131,7 +123,6 @@
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" remote="gh" revision="jellybean" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" remote="gh" revision="jellybean" />
   <project name="KangBangKreations/KangBanged-7x30" path="kernel/htc/KangBanged-7x30" remote="gh" revision="kb-stable" />
-
 
   <!--Aosp-->
   <project path="abi/cpp" name="platform/abi/cpp" />
