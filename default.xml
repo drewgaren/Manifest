@@ -16,7 +16,13 @@
   <default revision="refs/tags/android-4.1.2_r1"
            remote="aosp"
            sync-j="4" />
-
+ remote="github" revision="jellybean"/>
+  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="jellybean"/>
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="jellybean"/>
+  <project path="device/ti/panda" name="android_device_ti_panda" remote="github" revision="jellybean"/>
+  <project path="external/aac" name="android_external_aac" remote="github" revision="jellybean"/>
+  <project path="external/bluetooth/bluez" name="android_external_bluetooth_bluez" remote="github" revision="jellybean"/>
+  <project path="external/compat-wireless-3.5-rc3-1-sn" name="android_ex
 
   <!--Evervolv-->
   <project path="build" name="android_build" remote="dg" revision="jellybean">
@@ -25,13 +31,7 @@
 <!--  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" revision="jellybean"/>-->
   <project path="bionic" name="android_bionic" remote="github" revision="jellybean"/>
   <project path="dalvik" name="android_dalvik" remote="github" revision="jellybean"/>
-  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="github" revision="jellybean"/>
-  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="jellybean"/>
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="jellybean"/>
-  <project path="device/ti/panda" name="android_device_ti_panda" remote="github" revision="jellybean"/>
-  <project path="external/aac" name="android_external_aac" remote="github" revision="jellybean"/>
-  <project path="external/bluetooth/bluez" name="android_external_bluetooth_bluez" remote="github" revision="jellybean"/>
-  <project path="external/compat-wireless-3.5-rc3-1-sn" name="android_external_compat-wireless-3.5-rc3-1-sn" remote="github" revision="jellybean" />
+  <project path="device/asus/grouper" name="android_device_asus_grouper"ternal_compat-wireless-3.5-rc3-1-sn" remote="github" revision="jellybean" />
   <project path="external/dropbear" name="android_external_dropbear" remote="github" revision="jellybean"/>
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="github" revision="jellybean"/>
   <project path="external/freetype" name="android_external_freetype" remote="github" revision="jellybean"/>
@@ -117,9 +117,8 @@
   <project path="vendor/tmobile/themes/Androidian-6-100" name="theme-Androidian-6-100" remote="github" revision="jellybean"/>
 
   <!--CodeFire-->
-  <project name="aospX/platform_device_htc_ace" path="device/htc/ace" remote="gh" revision="jb-devel" />
   <project name="aospX/platform_device_htc_msm7x30-common" path="device/htc/msm7x30-common" remote="gh" revision="jb-devel" />
-  <project name="aospX/platform_device_htc_ace" path="vendor/htc/ace" remote="gh" revision="jb-devel" />
+  <project name="aospX/platform_device_htc_ace" path="device/htc/ace" remote="gh" revision="jb-devel" />
   <project path="hardware/qcom/display" name="codefire-ace/android_hardware_qcom_display" remote="gh" revision="jb-devel"/>
   <project name="CodeFireAOSP/platform_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="gh" revision="jb-devel" />
   <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="gh" revision="jellybean"/>
