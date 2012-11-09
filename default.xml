@@ -42,7 +42,7 @@
   <project path="external/yaffs2" name="android_external_yaffs2" remote="github" revision="jellybean" />
   <project path="external/zlib" name="android_external_zlib" remote="github" revision="jellybean" />
   <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="jellybean" />
-  <project path="frameworks/base" name="android_frameworks_base" remotibhardware_legacy" remote="github" revision="jellybean" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="jellybean" />
   <project path="hardware/msm7k" name="android_external_guava" remote="github" revision="jellybean" />
   <project path="external/icu4c" name="android_external_icu4c" remote="github" revision="jellybean" />
   <project path="external/openssh" name="android_external_openssh" remote="github" revision="jellybean" />
