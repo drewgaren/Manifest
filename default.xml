@@ -384,7 +384,6 @@
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" remote="gh" revision="jellybean" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" remote="gh" revision="jellybean" />
   <project path="device/samsung/tuna" name="CyanogenMod/android_device_samsung_tuna" remote="gh" revision="jellybean" />
-  <project path="device/samsung/maguro" name="CyanogenMod/android_device_samsung_maguro" remote="gh" revision="jellybean" />
   <project path="kernel/samsung/tuna" name="CyanogenMod/android_kernel_samsung_tuna" remote="gh" revision="jellybean" />
   <project name="KangBangKreations/KangBanged-7x30" path="kernel/htc/KangBanged-7x30" remote="gh" revision="kb-stable" />
 </manifest>
