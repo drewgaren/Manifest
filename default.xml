@@ -142,7 +142,7 @@
   <project path="vendor/htc" name="android_vendor_htc" remote="github" revision="jellybean" />
   <project path="vendor/samsung" name="android_vendor_samsung" remote="github" revision="jellybean"/>
 
-<!-- Tmobile Themes -->
+  <!-- Tmobile Themes -->
   <project path="vendor/tmobile/products/themes" name="themes-platform-vendor-tmobile-products-themes" remote="github" revision="jellybean"/>
   <project path="vendor/tmobile/apps/ThemeChooser" name="themes-platform-vendor-tmobile-apps-ThemeChooser" remote="github" revision="jellybean" />
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="themes-platform-vendor-tmobile-libs-com.tmobile.themes" remote="github" revision="jellybean"/>
@@ -151,14 +151,14 @@
 
   <!--Aosp-->
   <project path="abi/cpp" name="platform/abi/cpp" />
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" />
   <project path="cts" name="platform/cts" />
   <project path="development" name="platform/development"/>
   <project path="device/common" name="device/common" />
 <!--  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" />-->
-<!--  <project path="device/generic/armv7-a" name="device/generic/armv7-a" />-->
+<!-- oject path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
+  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
+  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <pr <project path="device/generic/armv7-a" name="device/generic/armv7-a" />-->
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
 <!--  <project path="device/moto/common" name="device/moto/common" />-->
@@ -224,6 +224,17 @@
   <project path="external/jpeg" name="platform/external/jpeg" />
   <project path="external/jsilver" name="platform/external/jsilver" />
   <project path="external/jsr305" name="platform/external/jsr305" />
+  <project path="external/libusb" name="platform/external/libusb" />
+  <project path="external/libusb-compat" name="platform/external/libusb-compat" />
+  <project path="external/libvpx" name="platform/external/libvpx" />
+  <project path="external/libxml2" name="platform/external/libxml2" />
+  <project path="external/libxslt" name="platform/external/libxslt" />
+  <project path="external/libyuv" name="platform/external/libyuv" />
+  <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" />
+  <project path="external/littlemock" name="platform/external/littlemock" />
+  <project path="external/llvm" name="platform/external/llvm" />
+  <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
+  <project path="external/markdown" name="platform/external/markdown" />
   <project path="external/junit" name="platform/external/junit" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" />
   <project path="external/libffi" name="platform/external/libffi" />
@@ -237,17 +248,6 @@
   <project path="external/libpng" name="platform/external/libpng" />
   <project path="external/libselinux" name="platform/external/libselinux" />
   <project path="external/libsepol" name="platform/external/libsepol" />
-  <project path="external/libusb" name="platform/external/libusb" />
-  <project path="external/libusb-compat" name="platform/external/libusb-compat" />
-  <project path="external/libvpx" name="platform/external/libvpx" />
-  <project path="external/libxml2" name="platform/external/libxml2" />
-  <project path="external/libxslt" name="platform/external/libxslt" />
-  <project path="external/libyuv" name="platform/external/libyuv" />
-  <project path="external/linux-tools-perf" name="platform/external/linux-tools-perf" />
-  <project path="external/littlemock" name="platform/external/littlemock" />
-  <project path="external/llvm" name="platform/external/llvm" />
-  <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
-  <project path="external/markdown" name="platform/external/markdown" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" />
   <project path="external/mesa3d" name="platform/external/mesa3d" />
   <project path="external/mksh" name="platform/external/mksh" />
@@ -370,7 +370,13 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
   <project path="sdk" name="platform/sdk" />
   
-    <!--CodeFire-->
+  
+  <!--DrewGaren-->
+  <project path="packages/wallpapers/Basic" name="platform_packages_wallpapers_basic" remote="dg" revision="JB" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings-1" remote="dg" revision="jellybean" />
+  <project path="device/htc/flyer" name="jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
+  <project path="kernel/htc/flyer" name="DexterJB-FlyerKernel" remote="dg" revision="JB" />
+  <project path="frameworks/av" name="android_frameworks_av-1" remote="dg" revision="JB"/>
   <project name="aospX/platform_device_htc_ace" path="device/htc/ace" remote="gh" revision="jb-devel" />
   <project name="aospX/platform_device_htc_msm7x30-common" path="device/htc/msm7x30-common" remote="gh" revision="jb-devel" />
   <project path="hardware/qcom/display" name="codefire-ace/android_hardware_qcom_display" remote="gh" revision="jb-devel"/>
@@ -385,11 +391,4 @@
   <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" remote="gh" revision="jellybean" />
   <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" remote="gh" revision="jellybean" />
   <project name="KangBangKreations/KangBanged-7x30" path="kernel/htc/KangBanged-7x30" remote="gh" revision="kb-stable" />
-
-  <!--DrewGaren-->
-  <project path="packages/wallpapers/Basic" name="platform_packages_wallpapers_basic" remote="dg" revision="JB" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings-1" remote="dg" revision="jellybean" />
-  <project path="device/htc/flyer" name="jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
-  <project path="kernel/htc/flyer" name="DexterJB-FlyerKernel" remote="dg" revision="JB" />
-  <project path="frameworks/av" name="android_frameworks_av-1" remote="dg" revision="JB"/>
 </manifest>
