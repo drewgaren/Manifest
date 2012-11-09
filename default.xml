@@ -53,9 +53,7 @@
   <project path="frameworks/rs" name="android_frameworks_rs" remote="github" revision="jellybean" />
   <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="github" revision="jellybean" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="jellybean" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_lithub" revision="jellybean" />
-  <project path="external/stlport" name="android_external_stlport" remote="github" revision="jellybean" />
-  <project path="external/v8" name="android_external_v8" remote="github" revision="jellybean" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="gh" revision="jellybean" />
   <project path="external/webkit" name="android_external_webkit" remote="github" revision="jellybean" />
   <project path="external/webrtc" name="android_external_webrtc" remote="github" revision="jellybean" />
   <project path="external/wpa_supplicant_6" name="android_hardware_msm7k" remote="github" revision="jellybean" />
