@@ -4,6 +4,8 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote  name="gh"
+           fetch="git://github.com/" />
   <remote  name="dg"
            fetch="git://github.com/drewgaren" />
   <remote  name="github"
@@ -18,54 +20,53 @@
   <project path="build" name="android_build" remote="dg" revision="jellybean">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-<!--  <project path="bootable/recovery" name="android_bootable_recovery" remote="github" revision="jellybean"/>-->
-  <project path="bionic" name="android_bionic" remote="github" revision="jellybean"/>
-  <project path="dalvik" name="android_dalvik" remote="github" revision="jellybean"/>
-  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="github" revision="jellybean"/>
-  <project path="device/generic/goldfish" name="android_device_generic_goldfish" remote="github" revision="jellybean"/>
-  <project path="device/samsung/crespo" name="android_device_samsung_crespo" remote="github" revision="jellybean"/>
-  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="jellybean"/>
-  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="jellybean"/>
-  <project path="device/ti/panda" name="android_device_ti_panda" remote="github" revision="jellybean"/>
-  <project path="external/aac" name="android_external_aac" remote="github" revision="jellybean"/>
-  <project path="external/bluetooth/bluez" name="android_external_bluetooth_bluez" remote="github" revision="jellybean"/>
-  <project path="external/chromium" name="android_external_chromium" remote="github" revision="jellybean"/>
+  <project path="bionic" name="android_bionic" remote="github" revision="jellybean" />
+  <project path="dalvik" name="android_dalvik" remote="github" revision="jellybean" />
+  <project path="device/asus/grouper" name="android_device_asus_grouper" remote="github" revision="jellybean" />
+  <project path="device/generic/goldfish" name="android_device_generic_goldfish" remote="github" revision="jellybean" />
+  <project path="device/samsung/crespo" name="android_device_samsung_crespo" remote="github" revision="jellybean" />
+  <project path="device/samsung/toro" name="android_device_samsung_toro" remote="github" revision="jellybean" />
+  <project path="device/samsung/tuna" name="android_device_samsung_tuna" remote="github" revision="jellybean" />
+  <project path="device/ti/panda" name="android_device_ti_panda" remote="github" revision="jellybean" />
+  <project path="external/aac" name="android_external_aac" remote="github" revision="jellybean" />
+  <project path="external/bluetooth/bluez" name="android_external_bluetooth_bluez" remote="github" revision="jellybean" />
+  <project path="external/chromium" name="android_external_chromium" remote="github" revision="jellybean" />
   <project path="external/compat-wireless-3.5-rc3-1-sn" name="android_external_compat-wireless-3.5-rc3-1-sn" remote="github" revision="jellybean" />
   <project path="external/dropbear" name="android_external_dropbear" remote="github" revision="jellybean"/>
-  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="github" revision="jellybean"/>
-  <project path="external/elfutils" name="android_external_elfutils" remote="github" revision="jellybean"/>
-  <project path="external/freetype" name="android_external_freetype" remote="github" revision="jellybean"/>
-  <project path="external/fsck_msdos" name="android_external_fsck_msdos" remote="github" revision="jellybean"/>
-  <project path="external/guava" name="androidme="android_external_wpa_supplicant_6" remote="github" revision="jellybean"/>
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="github" revision="jellybean"/>
-  <project path="external/yaffs2" name="android_external_yaffs2" remote="github" revision="jellybean"/>
-  <project path="external/zlib" name="android_external_zlib" remote="github" revision="jellybean"/>
-  <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="jellybean"/>
-  <project path="frameworks/base" name="android_frameworks_base" remote="github" revision="jellybean"/>
-  <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="jellybean"/>
-  <project path="frameworks/rs" name="android_frameworks_rs" remote="github" revision="jellybean"/>
-  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="github" revision="jellybean"/>
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="jellybean"/>
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="github" revision="jellybean"/>
-  <project path="hardware/msm7k" name="android_external_guava" remote="github" revision="jellybean"/>
-  <project path="external/icu4c" name="android_external_icu4c" remote="github" revision="jellybean"/>
-  <project path="external/openssh" name="android_external_openssh" remote="github" revision="jellybean"/>
-  <project path="external/openssl" name="android_external_openssl" remote="github" revision="jellybean"/>
-  <project path="external/oprofile" name="android_external_oprofile" remote="github" revision="jellybean"/>
-  <project path="external/skia" name="android_external_skia" remote="github" revision="jellybean"/>
-  <project path="external/srec" name="android_external_srec" remote="github" revision="jellybean"/>
-  <project path="external/stlport" name="android_external_stlport" remote="github" revision="jellybean"/>
-  <project path="external/v8" name="android_external_v8" remote="github" revision="jellybean"/>
-  <project path="external/webkit" name="android_external_webkit" remote="github" revision="jellybean"/>
-  <project path="external/webrtc" name="android_external_webrtc" remote="github" revision="jellybean"/>
-  <project path="external/wpa_supplicant_6" na_hardware_msm7k" remote="github" revision="jellybean"/>
-  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="github" revision="jellybean"/>
-  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="github" revision="jellybean"/>
-  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="github" revision="jellybean"/>
-  <project path="hardware/ril" name="android_hardware_ril" remote="github" revision="jellybean"/>
-  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="github" revision="jellybean"/>
-  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="github" revision="jellybean"/>
-  <project path="libcore" name="android_libcore" remote="github" revision="jellybean"/>
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="github" revision="jellybean" />
+  <project path="external/elfutils" name="android_external_elfutils" remote="github" revision="jellybean" />
+  <project path="external/freetype" name="android_external_freetype" remote="github" revision="jellybean" />
+  <project path="external/fsck_msdos" name="android_external_fsck_msdos" remote="github" revision="jellybean" />
+  <project path="external/guava" name="androidme="android_external_wpa_supplicant_6" remote="github" revision="jellybean" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="github" revision="jellybean" />
+  <project path="external/yaffs2" name="android_external_yaffs2" remote="github" revision="jellybean" />
+  <project path="external/zlib" name="android_external_zlib" remote="github" revision="jellybean" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="github" revision="jellybean" />
+  <project path="frameworks/base" name="android_frameworks_base" remotibhardware_legacy" remote="github" revision="jellybean" />
+  <project path="hardware/msm7k" name="android_external_guava" remote="github" revision="jellybean" />
+  <project path="external/icu4c" name="android_external_icu4c" remote="github" revision="jellybean" />
+  <project path="external/openssh" name="android_external_openssh" remote="github" revision="jellybean" />
+  <project path="external/openssl" name="android_external_openssl" remote="github" revision="jellybean" />
+  <project path="external/oprofile" name="android_external_oprofile" remote="github" revision="jellybean" />
+  <project path="external/skia" name="android_external_skia" remote="github" revision="jellybean" />
+  <project path="external/srec" name="android_external_srec" remote="ge="github" revision="jellybean" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="github" revision="jellybean" />
+  <project path="frameworks/rs" name="android_frameworks_rs" remote="github" revision="jellybean" />
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="github" revision="jellybean" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="github" revision="jellybean" />
+  <project path="hardware/libhardware_legacy" name="android_hardware_lithub" revision="jellybean" />
+  <project path="external/stlport" name="android_external_stlport" remote="github" revision="jellybean" />
+  <project path="external/v8" name="android_external_v8" remote="github" revision="jellybean" />
+  <project path="external/webkit" name="android_external_webkit" remote="github" revision="jellybean" />
+  <project path="external/webrtc" name="android_external_webrtc" remote="github" revision="jellybean" />
+  <project path="external/wpa_supplicant_6" name="android_hardware_msm7k" remote="github" revision="jellybean" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="github" revision="jellybean" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="github" revision="jellybean" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="github" revision="jellybean" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="github" revision="jellybean" />
+  <project path="hardware/ti/wlan" name="android_hardware_ti_wlan" remote="github" revision="jellybean" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" remote="github" revision="jellybean" />
+  <project path="libcore" name="android_libcore" remote="github" revision="jellybean" />
   <project path="packages/apps/Browser" name="android_packages_apps_Browser" remote="github" revision="jellybean" />
   <project path="packages/apps/Camera" name="android_packages_apps_Camera" remote="github" revision="jellybean" />
   <project path="packages/apps/CMWimaxSettings" name="android_packages_apps_CMWimaxSettings" remote="github" revision="jellybean" />
@@ -100,19 +101,19 @@
   <project path="device/htc/inc" name="android_device_htc_inc" remote="github" revision="jellybean" />
   <project path="device/htc/jewel" name="android_device_htc_jewel" remote="github" revision="jellybean" />
   <project path="device/htc/kingdom" name="android_device_htc_kingdom" remote="github" revision="jellybean" />
-  <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="github" revision="jellybean"/>
-  <project path="device/htc/msm8660-common" name="android_device_htc_msm8660-common" remote="github" revision="jellybean"/>
-  <project path="device/htc/msm8960-common" name="android_device_htc_msm8960-common" remote="github" revision="jellybean"/>
+  <project path="device/htc/msm7x30-common" name="android_device_htc_msm7x30-common" remote="github" revision="jellybean" />
+  <project path="device/htc/msm8660-common" name="android_device_htc_msm8660-common" remote="github" revision="jellybean" />
+  <project path="device/htc/msm8960-common" name="android_device_htc_msm8960-common" remote="github" revision="jellybean" />
   <project path="device/htc/passion" name="android_device_htc_passion" remote="github" revision="jellybean" />
   <project path="device/htc/primoc" name="android_device_htc_primoc" remote="github" revision="jellybean" />
   <project path="device/htc/pyramid" name="android_device_htc_pyramid" remote="github" revision="jellybean" />
   <project path="device/htc/qsd8k-common" name="android_device_htc_qsd8k-common" remote="github" revision="jellybean" />
-  <project path="device/htc/ruby" name="android_device_htc_ruby" remote="github" revision="jellybean"/>
-  <project path="device/htc/shooter" name="android_device_htc_shooter" remote="github" revision="jellybean"/>
-  <project path="device/htc/shootervm" name="android_device_htc_shootervm" remote="github" revision="jellybean"/>
-  <project path="device/htc/speedy" name="android_device_htc_speedy" remote="github" revision="jellybean"/>
+  <project path="device/htc/ruby" name="android_device_htc_ruby" remote="github" revision="jellybean" />
+  <project path="device/htc/shooter" name="android_device_htc_shooter" remote="github" revision="jellybean" />
+  <project path="device/htc/shootervm" name="android_device_htc_shootervm" remote="github" revision="jellybean" />
+  <project path="device/htc/speedy" name="android_device_htc_speedy" remote="github" revision="jellybean" />
   <project path="device/htc/supersonic" name="android_device_htc_supersonic" remote="github" revision="jellybean" />
-  <project path="device/htc/vivow" name="android_device_htc_vivow" remote="github" revision="jellybean"/>
+  <project path="device/htc/vivow" name="android_device_htc_vivow" remote="github" revision="jellybean" />
   <project path="external/bash" name="android_external_bash" remote="github" revision="jellybean" />
   <project path="external/busybox" name="android_external_busybox" remote="github" revision="jellybean" />
   <project path="external/htop" name="android_external_htop" remote="github" revision="jellybean" />
@@ -121,20 +122,19 @@
   <project path="external/rsync" name="android_external_rsync" remote="github" revision="jellybean" />
   <project path="external/su" name="android_external_su" remote="github" revision="jellybean" />
   <project path="external/vim" name="android_external_vim" remote="github" revision="jellybean" />
-  <project path="external/wpa_supplicant" name="android_external_wpa_supplicant" remote="github" revision="jellybean"/>
+  <project path="external/wpa_supplicant" name="android_external_wpa_supplicant" remote="github" revision="jellybean" />
   <project path="hardware/atheros" name="android_hardware_atheros" remote="github" revision="jellybean" />
   <project path="hardware/gpsshim" name="android_hardware_gpsshim" remote="github" revision="jellybean" />
   <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="github" revision="jellybean" />
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="github" revision="jellybean" />
-  <project path="packages/apps/AndroidTerm" name="android_packages_apps_AndroidTerm" remote="github" revision="jellybean"/>
-  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" remote="github" revision="jellybean"/>
-  <project path="packages/apps/EVTips" name="android_packages_apps_EVTips" remote="github" revision="jellybean"/>
-  <project path="packages/apps/EVToolbox" name="android_packages_apps_EVToolbox" remote="dg" revision="jellybean"/>
-  <project path="packages/apps/EVWidgets" name="android_packages_apps_EVWidgets" remote="github" revision="jellybean"/>
-  <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="github" revision="jellybean"/>
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-linaro-4.7" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.7" remote="github" revision="jellybean"/>
-  <project path="system/wlan/ti" name="android_system_wlan_ti" remote="github" revision="jellybean"/>
-  <project path="vendor/asus" name="android_vendor_asus" remote="github" revision="jellybean"/>
+  <project path="packages/apps/AndroidTerm" name="android_packages_apps_AndroidTerm" remote="github" revision="jellybean"  />
+  <project path="packages/apps/EVTips" name="android_packages_apps_EVTips" remote="github" revision="jellybean" />
+  <project path="packages/apps/EVToolbox" name="android_packages_apps_EVToolbox" remote="dg" revision="jellybean" />
+  <project path="packages/apps/EVWidgets" name="android_packages_apps_EVWidgets" remote="github" revision="jellybean" />
+  <project path="packages/apps/Superuser" name="android_packages_apps_Superuser" remote="github" revision="jellybean" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-linaro-4.7" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-linaro-4.7" remote="github" revision="jellybean" />
+  <project path="system/wlan/ti" name="android_system_wlan_ti" remote="github" revision="jellybean" />
+  <project path="vendor/asus" name="android_vendor_asus" remote="github" revision="jellybean" />
   <project path="vendor/ev" name="android_vendor_ev" remote="dg" revision="jellybean" />
   <project path="vendor/hp" name="android_vendor_hp" remote="github" revision="jellybean" />
   <project path="vendor/htc" name="android_vendor_htc" remote="github" revision="jellybean" />
@@ -153,23 +153,15 @@
   <project path="development" name="platform/development"/>
   <project path="device/common" name="device/common" />
 <!--  <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" />-->
-<!-- oject path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
+<!-- <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" />
-  <pr <project path="device/generic/armv7-a" name="device/generic/armv7-a" />-->
+  <project path="device/generic/armv7-a" name="device/generic/armv7-a" />-->
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" />
 <!--  <project path="device/moto/common" name="device/moto/common" />-->
 <!--  <project path="device/moto/stingray" name="device/moto/stingray" />-->
 <!--  <project path="device/moto/wingray" name="device/moto/wingray" />-->
-  <project path="device/sample" name="device/sample" />
-  <project path="device/samsung/crespo4g" name="device/samsung/crespo4g" />
-  <project path="device/samsung/maguro" name="device/samsung/maguro" />
-<!--  <project path="device/samsung/torospr" name="device/samsung/torospr" />-->
-  <project path="docs/source.android.com" name="platform/docs/source.android.com" />
-  <project path="external/android-mock" name="platform/external/android-mock" />
-  <project path="external/antlr" name="platform/external/antlr" />
-  <project path="external/apache-harmony" name="platform/external/apache-harmony" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/apache-xml" name="platform/external/apache-xml" />
   <project path="external/astl" name="platform/external/astl" />
@@ -179,6 +171,14 @@
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
   <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
+  <project path="device/sample" name="device/sample" />
+  <project path="device/samsung/crespo4g" name="device/samsung/crespo4g" />
+  <project path="device/samsung/maguro" name="device/samsung/maguro" />
+<!--  <project path="device/samsung/torospr" name="device/samsung/torospr" />-->
+  <project path="docs/source.android.com" name="platform/docs/source.android.com" />
+  <project path="external/android-mock" name="platform/external/android-mock" />
+  <project path="external/antlr" name="platform/external/antlr" />
+  <project path="external/apache-harmony" name="platform/external/apache-harmony" />
   <project path="external/bzip2" name="platform/external/bzip2" />
   <project path="external/checkpolicy" name="platform/external/checkpolicy" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
@@ -374,5 +374,19 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings-1" remote="dg" revision="jellybean" />
   <project path="device/htc/flyer" name="jelly_device_htc_flyer_wip" remote="dg" revision="JB" />
   <project path="kernel/htc/flyer" name="DexterJB-FlyerKernel" remote="dg" revision="JB" />
-  <project path="frameworks/av" name="android_frameworks_av-1" remote="dg" revision="JB"/
+  <project path="frameworks/av" name="android_frameworks_av-1" remote="dg" revision="JB" />
+  <project name="aospX/platform_device_htc_ace" path="device/htc/ace" remote="gh" revision="jb-devel" />
+  <project name="aospX/platform_device_htc_msm7x30-common" path="device/htc/msm7x30-common" remote="gh" revision="jb-devel" />
+  <project path="hardware/qcom/display" name="codefire-ace/android_hardware_qcom_display" remote="gh" revision="jb-devel" />
+  <project name="CodeFireAOSP/platform_vendor_qcom_proprietary" path="vendor/qcom/proprietary" remote="gh" revision="jb-devel" />
+  <project path="hardware/qcom/audio" name="CyanogenMod/android_hardware_qcom_audio" remote="gh" revision="jellybean" />
+  <project path="hardware/qcom/gps" name="CyanogenMod/android_hardware_qcom_gps" remote="gh" revision="jellybean" />
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" remote="gh" revision="jellybean" />
+  <project path="hardware/libhardware" name="CyanogenMod/android_hardware_libhardware" remote="gh" revision="jellybean" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="gh" revision="jellybean" />
+  <project path="hardware/msm7k" name="CyanogenMod/android_hardware_msm7k" remote="gh" revision="jellybean" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="gh" revision="jellybean" />
+  <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" remote="gh" revision="jellybean" />
+  <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" remote="gh" revision="jellybean" />
+  <project name="KangBangKreations/KangBanged-7x30" path="kernel/htc/KangBanged-7x30" remote="gh" revision="kb-stable" />
 </manifest>
